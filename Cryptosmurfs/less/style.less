@@ -6,6 +6,7 @@
 @buttontext: #f2f2f2;
 @contact: #353535;
 @icons: #8e8e8e;
+@bg: 171717;
 
 // FONTS
 @font-face {
@@ -79,7 +80,7 @@ html {
 }
 
 section {
-	padding: 10rem 0;
+
 }
 
 body {
@@ -96,7 +97,7 @@ button, input, a {
 }
 .maintitle {
 	.smb();
-	font-size: 7.2rem;
+	font-size: 6.4rem;
 	text-transform: uppercase;
 	letter-spacing: 1rem;
 }
@@ -106,6 +107,14 @@ button, input, a {
 	letter-spacing: 0.075em;
 	color: @white;
 	text-transform: none;
+}
+.blocktext {
+	margin-top: 2.7rem;
+}
+
+.boldt {
+	.bold();
+	color: @orange;
 }
 
 
@@ -159,17 +168,16 @@ button, input, a {
 }
 // End header
 
+
+//Zwen and text
 .main {
-	background: #171717 url(../img/zwenbg.png) no-repeat center;
+	background: #171717 url(../img/zwenbg1.png) center -5rem no-repeat;
 	background-size: cover;
 }
+
 .cheaper {
-	padding-top: 8rem;
-	animation-duration: 2.5s;
-}
-.line {
 	padding-top: 4rem;
-	border-bottom: 0.4rem solid @white;
+	animation-duration: 2.5s;
 }
 .better {
 	padding-top: 2rem;
@@ -179,15 +187,177 @@ button, input, a {
 	padding-top: 2rem;
 	animation-duration: 1.5s;
 }
+.line {
+	padding-top: 4rem;
+	border-bottom: 0.4rem solid @white;
+
+}
+.lastline {
+	margin-bottom: 10rem;
+}
+
+.btn {
+	.reg();
+	font-size: 2.2rem;
+	color: @white;
+	letter-spacing: 0.2rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(243, 126, 0);
+  border-radius: 6px;
+  background-color: rgb(255, 147, 32);
+  opacity: 0.98;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2),inset 0.877px 1.798px 4px 0px rgba(255, 248, 240, 0.18);
+  width: 202px;
+  height: 48px;
+  margin-left: 3.5rem;
+  &:hover {
+  	cursor: pointer;
+		background-color: darken(@orange, 10%);
+		color: @white;
+  }
+  }
+
+.view {
+	height: 100vh;
+}
 
 
 
 
+// Buy page
+.buy {
+	padding: 10rem;
+	// Border
+	.bordername {
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		height: 15.8rem;
+		left: 50%;
+		transform: translateX(-70%) translateY(-50%);
+		background-color: #171717;
+		text-align: center;
+		margin-top: 0.9rem;
+	}
+	.bigborder {
+		display: block;
+		width: 100%;
+		height: 70rem;
+		border: 1px solid @border;
+		background: none;
+	}
+	//Sellblock
+	.sellblock {
+		margin-top: 12rem;
+		display: block;
+		width: 95%;
+		height: 52rem;
+		border: 1px solid @border;
+		margin-left: 1rem;
+		&:hover {
+		border-color: @orange;
+		box-shadow: 0.975px 7.94px 21px 0px rgba(250, 145, 32, 0.31);
+		}
+	}
+	.sellblockname {
+        position: absolute;
+        display: inline-block;
+        width: 21.5rem;
+        height: 10rem;
+        left: 30%;
+        transform: translateX(-50%) translateY(-560px);
+        background-color: #171717;
+        text-align: center;
+        margin-left: 1rem;
+       }
+       .sellblocktext {
+            .reg();
+            font-size: 4.8rem;
+        }
+	.nablock {
+		
+	}
+
+	.features {
+		margin-left: 10%;
+		margin-top: 7rem;
+	}
+
+	.list {
+		list-style: none;
+		.reg();
+		font-size: 18px;
+		line-height: 4.5rem;
+		letter-spacing: 0.2rem;
+	}
+	.ot {
+		margin-left: 1rem;
+	}
+	.price {
+		.reg();
+		font-size: 3.6rem;
+		letter-spacing: 0.3rem;
+		margin-left: 13%;
+		margin-top: 2.5rem;
+	}
+	.buybtn {
+		padding-top: 1rem;
+	}
+}
+// end buy page
+
+
+
+// HOW TO BUY
+.h2b {
+	text-align: center;
+.package {
+
+.circle {
+	display: inline-block;
+	text-align: center;
+	margin-top: 8rem;
+  border-width: 1px;
+  border-color: rgb(142, 142, 142);
+  border-style: solid;
+  border-radius: 50%;
+  background-color: rgb(255, 147, 32);
+  width: 168px;
+  height: 168px;
+	.basket, .mail, .paypal {
+		text-align: center;
+		margin-top: 4.6rem;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+		}
+		p {
+			display: inline;
+		}
+	}
+.description {
+  font-size: 3.6rem;
+  .reg();
+  margin-top: 10rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+}
+}
 
 
 
 //MEDIA
 @media (max-width: 1199px) {
+
+	.main {
+	background: #171717 url(../img/zwenbg1.png) 35rem -5rem no-repeat;
+	background-size: cover;
+}
 	.logo {
 		
 	}
@@ -195,12 +365,41 @@ button, input, a {
 		position: absolute;
 		text-align: center;
 	}
+
+	.buy {
+		.bigborder {
+			border-bottom: none;
+			border-left: none;
+			border-right: none;
+		}
+		.bordername {
+			width: 60%;
+			left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		}
+		.features {
+			margin-left: 30%;
+			.price {
+				margin-left: 8%;
+			}
+		}
+	}
+
 }
+
+
 
 @media (max-width: 991px)  {
 	.main {
 		background: none;
 	}
+	.bigborder {
+		display: block;
+		width: 100%;
+		height: 70rem;
+		border: 1px solid @border;
+		background: none;
+		}
 }
 
 @media (max-width: 767px) {
@@ -214,7 +413,38 @@ button, input, a {
 		display: none;
 	}
 	.cheaper {
-		padding-top: 4rem;
+		padding-top: 1rem;
+	}
+	.buy {
+	padding: 1rem;
+	
+	.features {
+		margin-top: 15rem;
+		margin-left: 0;
+	}
+	.bigborder {
+		border: none;
+	}
+	.bordername {
+		text-align: left;
+		left: 0;
+		transform: none;
+	}
+	.sellblock {
+		display: inline-block;
+		border: none;
+		margin-bottom: 10rem;
+		margin-top: 15rem;
+		// &:hover {
+		// 	background-color: darken(@orange, 0%);
+		// 	color: @white;
+		// }
+	}
+	.sellblockname {
+		text-align: left;
 	}
 }
+
+}
+
 
