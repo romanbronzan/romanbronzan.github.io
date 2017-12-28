@@ -6,7 +6,7 @@
 @buttontext: #f2f2f2;
 @contact: #353535;
 @icons: #8e8e8e;
-@bg: 171717;
+@bg: #171717;
 
 // FONTS
 @font-face {
@@ -80,7 +80,7 @@ html {
 }
 
 section {
-
+	padding: 10rem;
 }
 
 body {
@@ -119,27 +119,39 @@ button, input, a {
 
 
 // Body
-.header {
-	margin-top: 1rem;
-	.logo {
+
+//Navbar
+.navbar {
+	background-color: #171717;
+	border: none;
+	&-brand {
 		.bold();
 		font-size: 2.4rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1rem;
+		&:hover {
+			cursor: pointer;
+			text-decoration: none;
+		}
+
 	}
+	.white {
+			color: @white;
+		}
 	.menu {		
 		.light();
 		margin-top: 0.5rem;
 		text-align: right;
 		font-size: 1.6rem;
 		letter-spacing: 0.075rem;
-		a {
+
+		li > a {
 			color: @li;
 			text-decoration: none;
 			position: relative;
 			white-space: nowrap;
 			&:hover {
-				color: lighten(@li, 30%);
+				color: @white;
 			}
 			&:hover::after {
 			  content: '';
@@ -149,24 +161,29 @@ button, input, a {
 			  border-bottom: 2px solid @orange;
 			}
 		}
+		
 		.how {
-			margin-left: 2rem;
+			margin-left: 1rem;
 		}
-		.why {
-			margin-left: 2rem;
+		.whychooseus {
+			margin-left: 1rem;
 		}
 		.rev {
-			margin-left: 3rem;
+			margin-left: 2rem;
 		}
 		.faq {
-			margin-left: 3rem;
+			margin-left: 2rem;
 		}
 		.contact {
-			margin-left: 3rem;
+			margin-left: 2rem;
 		}
 	}
+
 }
-// End header
+
+
+
+
 
 
 //Zwen and text
@@ -201,6 +218,7 @@ button, input, a {
 	font-size: 2.2rem;
 	color: @white;
 	letter-spacing: 0.2rem;
+	text-transform: uppercase;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(243, 126, 0);
@@ -210,7 +228,7 @@ button, input, a {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2),inset 0.877px 1.798px 4px 0px rgba(255, 248, 240, 0.18);
   width: 202px;
   height: 48px;
-  margin-left: 3.5rem;
+  
   &:hover {
   	cursor: pointer;
 		background-color: darken(@orange, 10%);
@@ -226,8 +244,7 @@ button, input, a {
 
 
 // Buy page
-.buy {
-	padding: 10rem;
+
 	// Border
 	.bordername {
 		position: absolute;
@@ -274,7 +291,15 @@ button, input, a {
        .sellblocktext {
             .reg();
             font-size: 4.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
         }
+
+        .buy {
+	padding: 10rem;
+	.btn {
+		margin-left: 3.5rem;
+	}
 	.nablock {
 		
 	}
@@ -336,6 +361,15 @@ button, input, a {
 		p {
 			display: inline;
 		}
+		&basket {
+			animation-duration: 1.5s;
+		}
+		&paypal {
+			animation-duration: 2s;
+		}
+		&mail {
+			animation-duration: 2.5s;
+		}
 	}
 .description {
   font-size: 3.6rem;
@@ -348,7 +382,125 @@ button, input, a {
 }
 }
 }
+// END H2B
 
+
+
+// WHY CHOOSE US
+.why {
+	padding: 12rem;
+	.featuresborder {
+		margin-top: 12rem;
+		display: block;
+		height: 18rem;
+		border: 1px solid @border;
+		margin-left: 1rem;
+		// &:hover {
+		// border-color: @orange;
+		// box-shadow: 0.975px 7.94px 21px 0px rgba(250, 145, 32, 0.31);
+	// }
+		&-name {
+		position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 10rem;
+        left: 80%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: #171717;
+        text-align: center;
+        margin-left: 1rem;
+		}
+		
+	}
+	.bigborder {
+			height: 163rem;
+		}
+	.whybordername {
+
+		position: absolute;
+		display: inline-block;
+		height: 15.8rem;
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		background-color: #171717;
+		text-align: center;
+		margin-top: 0.9rem;
+	}
+	.fa {
+		position: absolute;
+		  font-size: 72px;
+		  color: rgb(255, 255, 255);
+		  text-transform: uppercase;
+		  line-height: 1.2;
+		  margin-top: -13rem;
+		  margin-left: -3rem;
+	}
+	p {
+		margin-top: -12rem;
+	}
+	.fast-why {
+		.featuresborder-name {
+			margin-left: 2.4rem;
+		}
+	}
+	.accs-why {
+		.featuresborder-name {
+			margin-left: -7.5rem;
+		}
+	}
+
+}
+//END WHY
+
+
+
+// REVIEWS
+.reviews {
+	text-align: center;
+	&-title {
+		margin-top: -5rem;
+	}
+	.fineriview {
+		margin-top: 10rem;
+		
+	}
+	.btn {
+		margin-top: 7rem;
+		margin-bottom: -4rem;
+  width: 26.1rem;
+	}
+}
+
+
+.idea {
+	padding-top: 16rem;
+	.chal {
+		margin-left: -10rem;
+	}
+	&-champs {
+		margin-top: 5rem;
+
+		}
+		.namechamps {
+			margin-left: -10rem;
+		}
+		.teach {
+			margin-left: -10rem;
+			.sellblocktext {
+				text-align: left;
+				margin-left: 5rem;
+			}
+		}
+	.blocktext {
+		margin-top: -1.5rem;
+		text-align: left;
+		margin-left: 3.2rem;
+	}
+	.bigborder {
+		height: 107rem;
+	}
+}
 
 
 //MEDIA
@@ -358,13 +510,9 @@ button, input, a {
 	background: #171717 url(../img/zwenbg1.png) 35rem -5rem no-repeat;
 	background-size: cover;
 }
-	.logo {
-		
-	}
-	.menu {
-		position: absolute;
-		text-align: center;
-	}
+
+	
+
 
 	.buy {
 		.bigborder {
@@ -403,18 +551,14 @@ button, input, a {
 }
 
 @media (max-width: 767px) {
-	.logo {
-		text-align: center;
-	}
-	.maintitle {
-		font-size: 5.2rem;
-	}
-	.menu {
-		display: none;
-	}
+		
+
 	.cheaper {
 		padding-top: 1rem;
 	}
+
+
+
 	.buy {
 	padding: 1rem;
 	
@@ -446,5 +590,7 @@ button, input, a {
 }
 
 }
+
+
 
 
