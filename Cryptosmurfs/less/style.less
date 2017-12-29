@@ -7,6 +7,7 @@
 @contact: #353535;
 @icons: #8e8e8e;
 @bg: #171717;
+@dbtn: rgb(28, 28, 28);
 
 // FONTS
 @font-face {
@@ -75,6 +76,9 @@
 
 
 // Basic Settings
+ li {
+    list-style-type: none; /* Убираем маркеры */
+   }
 html {
 	font-size: 10px;
 }
@@ -171,7 +175,7 @@ button, input, a {
 		.rev {
 			margin-left: 2rem;
 		}
-		.faq {
+		.faqnav {
 			margin-left: 2rem;
 		}
 		.contact {
@@ -395,10 +399,10 @@ button, input, a {
 		height: 18rem;
 		border: 1px solid @border;
 		margin-left: 1rem;
-		// &:hover {
-		// border-color: @orange;
-		// box-shadow: 0.975px 7.94px 21px 0px rgba(250, 145, 32, 0.31);
-	// }
+		&:hover {
+		border-color: @orange;
+		box-shadow: 0.975px 7.94px 21px 0px rgba(250, 145, 32, 0.31);
+	}
 		&-name {
 		position: absolute;
         display: inline-block;
@@ -426,6 +430,7 @@ button, input, a {
 		background-color: #171717;
 		text-align: center;
 		margin-top: 0.9rem;
+		
 	}
 	.fa {
 		position: absolute;
@@ -503,6 +508,224 @@ button, input, a {
 }
 
 
+
+
+//preFAQ
+
+	.prefaq {
+		background-color: @orange;
+		.prefaqtext {
+			  font-size: 60px;
+			  .smb();
+			  color: rgb(255, 255, 255);
+			  text-transform: uppercase;
+			  line-height: 1.2;
+			  text-align: left;
+			  .faqsp {
+			  	  color: #353535;
+			  }
+		}
+
+	}
+
+
+
+// FAQ
+.faq {
+	.bigborder {
+		height: 110rem;
+		.maintitle {
+			margin-top: 3.2rem;
+		}
+		.panel {
+		}
+		.panel-group {
+			margin-top: 10rem;
+
+		}
+		.panel-default {
+			background-color: darken(@bg, 2%);
+			margin-top: 1rem;
+		}
+		.button {
+
+		}
+		a {
+			.smb();
+			font-size: 1.8rem;
+			color: @li;
+			text-decoration: none;
+			position: relative;
+			white-space: nowrap;
+			&:hover {
+				color: @white;
+			}
+			&:hover::after {
+			  content: '';
+			  position: absolute;
+			  bottom: 0;
+			  left: -1px; right: -1px;  
+			}
+		}
+		.panel-heading {
+
+			
+			background-color: @bg;
+
+
+		}
+		.panel-body {
+			font-size: 1.6rem;
+			.light();
+			color: @li;
+
+		}
+	}
+}
+
+
+//CONTACT;
+.contactform {
+	.main-form {
+		margin-bottom: 3rem;
+		width: 100%;
+		height: 52rem;
+		background-color: @white;
+		&-header {
+			padding-top: 3rem;
+			text-align: center;
+			  font-size: 48px;
+			  .reg ();
+			  color: rgb(53, 53, 53);
+			  text-transform: uppercase;
+			  line-height: 1.2;
+			  letter-spacing: 0.7rem;
+		}
+		&-input {
+			display: block;
+			width: 100%;
+			margin-top: 2rem;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-color: @bg;
+			font-family: ProximaNova_Light;
+			font-size: 1.6rem;
+
+
+			&-mail {
+				display: block;
+				width: 100%;
+				margin-top: 8rem;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				border-color: @bg;
+			}
+			&-email {
+				margin-top: 3rem;
+			}
+			.btn-contact {
+				display: block;
+				margin-top: 7rem;
+				text-align: center;
+				  border-style: solid;
+				  border-width: 1px;
+				  border-color: rgb(28, 28, 28);
+				  border-radius: 6px;
+				  background-color: rgb(53, 53, 53);
+				  opacity: 0.98;
+				  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2),inset 0.877px 1.798px 4px 0px rgba(255, 248, 240, 0.18);
+					&:hover {
+						background-color: lighten(@dbtn, 15%);
+					}
+				}
+		}
+	}
+}
+
+
+// FOOTER
+.footer {
+	padding-top: 6rem;
+	.logo { 
+		
+		.bold();
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+		&:hover {
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+	&-horizon {
+		padding-top: 2rem;
+		width: 100%;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px solid @border;
+
+	}
+	.text {
+		padding-top: 2rem;
+	}
+	// .footer-line {
+	// 	height: 3rem;
+	// 	width: 1rem;
+	// 	border-top: none;
+	// 	border-bottom: none;
+	// 	border-right: none;
+	// 	border-left: 1 px solid @border;
+	// }
+	&-menu {
+		margin-top: 3rem;
+		ul {
+			font-size: 1.6rem;
+			line-height: 4rem;
+		}
+		a {	
+			.light();
+			color: @li;
+			text-decoration: none;
+			&:hover {
+				color: @white;
+			}
+		}
+		i {
+			color: @orange;
+			padding-right: 0.5rem;
+		}
+	}
+	&-contact {
+		letter-spacing: 0.1rem;
+		i {
+			color: @orange;
+			padding-right: 0.8rem;
+			font-size: 1.8rem;
+		}
+		padding-top: 2rem;
+		h4 {
+			text-transform: uppercase;
+			.light();
+		}
+		&-data {
+			.light();
+			font-size: 1.6rem;
+			
+		}
+		.globe {
+				display: block;
+				margin-top: 1.8rem;
+			}
+		.fa-envelope-square {
+			margin-top: 0.7rem;
+		}
+	}
+}
+
+
 //MEDIA
 @media (max-width: 1199px) {
 
@@ -537,6 +760,7 @@ button, input, a {
 
 
 
+
 @media (max-width: 991px)  {
 	.main {
 		background: none;
@@ -548,6 +772,30 @@ button, input, a {
 		border: 1px solid @border;
 		background: none;
 		}
+
+	.why {
+		display: none;
+	}
+	.idea {
+		display: none;
+	}
+	.reviews {
+		display: none;
+	}
+	.prefaq {
+		display: none;
+	}
+
+	.faq {
+		display: none;
+		.bordername {
+			display: none;
+		}
+	}
+	.hiderev {
+		display: none;
+	}
+
 }
 
 @media (max-width: 767px) {
