@@ -114,7 +114,7 @@
 							</ul>
 								<p class="price">10<span class="last"><i class="fa fa-usd" aria-hidden="true"></i></span> or<br> 8<span class="last"><i class="fa fa-usd" aria-hidden="true"></i></span> in <span class="last"><i class="fa fa-btc" aria-hidden="true"></i><span class="boldt">TC</span></span></p>
 								<div class="buybtn">
-									<button class="btn">BUY NOW!</button>
+									<form action="na.html"><button class="btn">BUY NOW!</button></form>
 								</div>
 							</div>
 							<!-- copy here -->
@@ -138,7 +138,7 @@
 							</ul>
 								<p class="price">10<span class="last"><i class="fa fa-usd" aria-hidden="true"></i></span> or<br> 8<span class="last"><i class="fa fa-usd" aria-hidden="true"></i></span> in <span class="last"><i class="fa fa-btc" aria-hidden="true"></i><span class="boldt">TC</span></span></p>
 								<div class="buybtn">
-									<form action="euw"><button class="btn">BUY NOW!</button></form>
+									<form action="euw.html"><button class="btn">BUY NOW!</button></form>
 								</div>
 							</div>
     					</div>
@@ -160,7 +160,7 @@
 							</ul>
 								<p class="price">10<span class="last"><i class="fa fa-usd" aria-hidden="true"></i></span> or<br> 8<span class="last"><i class="fa fa-usd" aria-hidden="true"></i></span> in <span class="last"><i class="fa fa-btc" aria-hidden="true"></i><span class="boldt">TC</span></span></p>
 								<div class="buybtn">
-									<button class="btn">BUY NOW!</button>
+									<form action="eune.html"><button class="btn">BUY NOW!</button></form>
 								</div>
 							</div>
     					</div>
@@ -348,7 +348,7 @@
                 <img src="img/fineriview1.png" alt="">
                 <img src="img/fineriview1.png" alt="">
     	</div>
-    	<button class="btn">view all reviews</button>			
+    	<form action="reviews.html"><button class="btn">view all reviews</button></form>	
     </section>
 	</div>
 
@@ -702,18 +702,18 @@
 
 
 
-   	<section class="contactform parallax-window" id="con" data-parallax="scroll" data-image-src="img/contactbg.jpg">
+   	<section class="contactform" id="con">
    		<div class="container">
    			<div class="row">
    				<div class="col-lg-10 col-lg-offset-1">
    					<div class="main-form">
    						<h2 class="main-form-header">contact us</h2>
-   						<form action="#" class="main-form-input">
+   						<form action="mail.php" method="POST" class="main-form-input">
 							<div class="col-lg-8 col-lg-offset-2">
-   								<input placeholder="Your name" type="text" class="main-form-input">
-   								<input placeholder="Your e-mail" type="text" class="main-form-input main-form-input-email">
-   								<input placeholder="Your message" type="text" class="main-form-input main-form-input-mail">
-   								<center><button class="btn btn-contact">send</button></center>
+   								<input class="main-form-input" type="text" placeholder="Your name">
+   								<input class="main-form-input main-form-input-email" type="text"  placeholder="Your e-mail">
+   								<input class="main-form-input main-form-input-mail" type = "text" name = "otheraccs" id="otheraccs" value = "" placeholder="Your message" >
+   								<center><button type="submit" class="btn btn-contact">send</button></center>
 							</div>   							
    						</form>
    					</div>
@@ -739,9 +739,9 @@
    				<div class="col-lg-2">
    					<div class="footer-menu">
    						<ul>
-   							<li><a href="#"><a href="#buy"><i class="fa fa-caret-right" aria-hidden="true"></i>Buy Now</a></li>
-   							<li><a href="#"><a href="#how"><i class="fa fa-caret-right" aria-hidden="true"></i>How to buy</a></li>
-   							<li><a href="#"><a href="#why"><i class="fa fa-caret-right" aria-hidden="true"></i>Why choose us</a></li>
+   							<li><a href="#buy"><i class="fa fa-caret-right" aria-hidden="true"></i>Buy Now</a></li>
+   							<li><a href="#how"><i class="fa fa-caret-right" aria-hidden="true"></i>How to buy</a></li>
+   							<li><a href="#why"><i class="fa fa-caret-right" aria-hidden="true"></i>Why choose us</a></li>
    						</ul>
    					</div>
    				</div>
@@ -749,9 +749,9 @@
    				<div class="col-lg-2">
    					<div class="footer-menu">
    						<ul>
-   							<li><a href="#"><a href="#rev"><i class="fa fa-caret-right" aria-hidden="true"></i>Reviews</a></li>
-   							<li><a href="#"><a href="#faq"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
-   							<li><a href="#"><a href="#con"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact us</a></li>
+   							<li><a href="#rev"><i class="fa fa-caret-right" aria-hidden="true"></i>Reviews</a></li>
+   							<li><a href="#faq"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+   							<li><a href="#con"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact us</a></li>
    						</ul>
    					</div>
    				</div>
@@ -778,7 +778,7 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
