@@ -1,0 +1,563 @@
+// ШРИФТЫ
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+
+.reg() {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.bold() {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+// COLOURS
+@orange: #f19d29;
+@black: #04080b;
+@white: #ffffff;
+
+
+// BASIC SETINGS
+html {
+	font-size: 10px;
+}
+// section {
+// 	padding: 8rem;
+// }
+body{
+	background: #121416 url(../img/bg/istock.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	.reg();
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+.orange {
+	color: @orange;
+}
+.title {
+	font-size: 6.2rem;
+	color: @black;
+	.bold();
+	text-align: center;
+	background-color: @orange;
+	width: 98.8vw;
+	margin-top: 0;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	text-transform: uppercase;
+}
+h2 {
+	margin: 0;
+}
+
+.rect {
+	position: absolute;
+	width: 1.5rem;
+	height: 6rem;
+	background-color: @orange;
+	margin-top: 0.6rem;
+}
+h3 {
+	.bold ();
+	font-size: 3rem;
+	color: @orange;
+	text-transform: uppercase;
+	width: 100%;
+	margin-left: 2.5rem;
+}
+
+
+
+
+
+.main {
+	background: #121416 url(../img/bg/mainbg.jpg) center no-repeat;
+	background-size: cover;
+	.navbar {
+		background: none;
+		border: none;
+		position: absolute;
+		.navbar-nav {
+			li {
+				a {		
+					  font-size: 18px;
+					  .reg();
+					  color: @white;
+					  text-align: left;
+					  text-transform: uppercase;
+					  margin-right: 2.5rem;
+					  text-decoration: none;
+					  transition: 0.2s linear;
+					   outline: none;
+					  &:hover {
+					  	color: @orange;
+					  }
+					  a:active{
+					  border: none;
+					  outline: none;
+					  text-decoration: none;
+					  }
+
+				}
+			}
+		}
+		.navbar-header {
+			a {
+				outline: none;
+			}
+		}
+	}
+
+	.logo {
+		margin-top: 2rem;
+		a {
+			outline: none;
+		}
+	}
+	.menu {
+		margin-top: 3rem;
+		
+	}
+	.mainlogo {
+		margin-top: 8rem;
+	}
+	&logo {
+		text-align: center;
+		padding-top: 8rem;
+	}
+	.mainlogomob {
+		display: none;
+	}
+	&-title {
+		.bold();
+		font-size: 6.6rem;
+		color: @white;
+		text-transform: uppercase;
+		text-align: center;	
+	}
+	.down {
+		display: block;
+		font-size: 7.2rem;
+		text-align: center;
+		color: @white;
+		padding-top: 11rem;
+		text-decoration: none;
+		outline: none;
+		padding-bottom: 4rem;
+		a {
+			color: @white;
+			text-decoration: none;
+			outline: none;
+		}
+
+	}
+	.callme {
+		.btn {
+			margin-top: 4rem;
+			width: 100%;
+			text-align: center;
+			height: 6rem;
+			background-color: @orange;
+			text-transform: uppercase;
+			.bold();
+			font-size: 2.9rem;
+			border-radius: 1px;
+			color: @black;
+			&:hover {
+				background-color: darken(@orange, 10%);
+				transition: 0.2s linear;
+			}
+		}
+	}
+}
+
+
+.desc {
+	display: inline-block;
+	.forvideo {
+		padding-top: 4rem;
+	}
+	&-text {
+		  font-size: 1.8rem;
+		  .reg();
+		  color: @white;
+		  line-height: 1.2;
+		  text-align: left;
+		  letter-spacing: 0.15rem;
+		  padding-top: 4rem;
+	}
+	.subtitle {
+		margin-top: 5rem;
+	}
+}
+
+.features1 {
+	padding-top: 4rem;
+}
+.features {
+	padding-top: 2rem;
+	&-text {
+		text-align: left;
+		font-size: 2.2rem;
+		color: @white;
+		margin-left: -2.5rem;
+		padding-top: 0.4rem;
+	}
+	&-small {
+		margin-top: -1rem;
+		margin-left: -2.5rem;
+		font-size: 1.4rem;
+		text-align: left;
+		color: @white;
+	}
+	&-image {
+		display: block;
+	}
+	&-image-mob {
+		display: none;
+	}
+
+}
+.features-text-two {
+	text-align: left;
+	font-size: 2.2rem;
+	color: @white;
+	margin-left: -2.5rem;
+	margin-top: 0rem;
+}
+.features-nev {
+	text-align: left;
+	font-size: 2.2rem;
+	color: @white;
+	margin-left: -2.5rem;
+	margin-top: -0.8rem;
+}
+.features-text-two-small {
+	text-align: left;
+	font-size: 2.2rem;
+	color: @white;
+	margin-left: -2.5rem;
+	margin-top: -0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MEDIA
+
+// MD
+@media (max-width: 1199px) {
+	.main {
+		.callme {
+			.btn {
+			width: 100%;
+			text-align: center;
+		}
+		}
+	}
+	h3 {
+		font-size: 2.7rem;
+	}
+
+	.desc {
+		.forvideo {
+			text-align: center;
+		}
+		.desc-text {
+			text-align: center;
+			margin-top: 1rem;
+		}
+		.features {
+			padding-top: 2rem;
+			&-text {
+				text-align: left;
+				font-size: 2.2rem;
+				color: @white;
+				margin-left: -1rem;
+				padding-top: 0.4rem;
+			}
+			&-small {
+				margin-top: -1rem;
+				margin-left: -1rem;
+				font-size: 1.4rem;
+				text-align: left;
+				color: @white;
+			}
+			&-image {
+				display: block;
+			}
+			&-image-mob {
+				display: none;
+			}
+		}
+		.features-text-two {
+			text-align: left;
+			font-size: 2.2rem;
+			color: @white;
+			margin-left: -1rem;
+			margin-top: 0rem;
+		}
+		.features-nev {
+			text-align: left;
+			font-size: 2.2rem;
+			color: @white;
+			margin-left: -1rem;
+			margin-top: -0.8rem;
+		}
+		.features-text-two-small {
+			text-align: left;
+			font-size: 2.2rem;
+			color: @white;
+			margin-left: -1rem;
+			margin-top: -0.8rem;
+		}
+	}
+
+}
+
+
+
+// SM
+@media (max-width: 991px)  {
+	body{
+		background: #121416 url(../img/bg/iStockmob.jpg) no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+		.reg();
+	}
+
+
+	.navbar {
+		.navbar-brand {
+			right: 50%;
+			transform:  translateX(115%) translateY(10%);
+		}
+		.menu {
+			right: 50%;
+			transform:  translateX(-10%) translateY(-10%);
+		}
+	}
+
+	h3 {
+		font-size: 2.2rem;
+	}
+	.desc {
+		.forvideo {
+			text-align: center;
+		}
+		.desc-text {
+			text-align: center;
+			margin-top: 1releftm;
+		}
+		.features {
+			padding-top: 2rem;
+			&-text {
+				text-align: left;
+				font-size: 2.2rem;
+				color: @white;
+				margin-left: 1rem;
+				padding-top: 0.4rem;
+			}
+			&-small {
+				margin-top: -1rem;
+				margin-left: 1rem;
+				font-size: 1.4rem;
+				text-align: left;
+				color: @white;
+			}
+			&-image {
+				display: block;
+			}
+			&-image-mob {
+				display: none;
+			}
+		}
+		.features-text-two {
+			text-align: left;
+			font-size: 2.2rem;
+			color: @white;
+			margin-left: 1rem;
+			margin-top: 2rem;
+		}
+		.features-nev {
+			text-align: left;
+			font-size: 2.2rem;
+			color: @white;
+			margin-left: 1rem;
+			margin-top: -0.8rem;
+		}
+		.features-text-two-small {
+			text-align: left;
+			font-size: 2.2rem;
+			color: @white;
+			margin-left: 1rem;
+			margin-top: -0.8rem;
+		}
+		.smnext {
+			margin-top: 2rem;
+		}
+		.smh4 {
+			h4 {
+				margin-top: -1rem; 
+			}
+		}
+	}
+	
+
+}
+
+
+// XS
+@media (max-width: 767px) {
+	body{
+		background: #121416 url(../img/bg/iStockmob.jpg) no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+		.reg();
+	}
+
+	.navbar {
+		.navbar-brand {
+			right: 50%;
+			transform:  translateX(20%) translateY(10%);
+		}
+		.menu {
+			right: 50%;
+			transform:  translateX(20%) translateY(0%);
+		}
+	}
+
+
+	.main {
+		.navbar {
+		background: @black;
+		padding-bottom: 2rem;
+		button {
+			margin-top: 4rem;
+		}
+		}
+
+	.mainlogo {
+		display: none;
+	}
+	.mainlogomob {
+		display: block;
+		margin-top: 12rem;
+		text-align: center;
+	}
+	&-title {
+		font-size: 3rem;
+	}
+	.callme {
+		.btn {
+			font-size: 2rem;
+		}
+	}
+	}
+
+	.title {
+		font-size: 2.8rem;
+	}
+	.desc {
+		display: inline-block;
+		.forvideo {
+			display: none;
+		}
+		&-text {
+			  font-size: 1.8rem;
+			  .reg();
+			  color: @white;
+			  line-height: 1.2;
+			  text-align: center;
+			  letter-spacing: 0.15rem;
+			  padding-top: 4rem;
+		}
+		.subtitle {
+			margin-top: 5rem;
+		}
+		.features1 {
+			padding-top: 4rem;
+		}
+		.features {
+			padding-top: 2rem;
+			&-text {
+				text-align: center;
+				font-size: 2.2rem;
+				color: @white;
+				margin-left: 0rem;
+				padding-top: 0.4rem;
+			}
+			&-small {
+				margin-top: -1rem;
+				margin-left: -2.5rem;
+				font-size: 1.4rem;
+				text-align: center;
+				color: @white;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			&-image {
+				display: none;
+			}
+			&-image-mob {
+				display: block;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;			}
+
+		}
+		.features-text-two {
+			text-align: center;
+				font-size: 2.2rem;
+				color: @white;
+				margin-left: 0rem;
+				padding-top: 1rem;
+		}
+		.features-nev {
+			text-align: center;
+							font-size: 2.2rem;
+							color: @white;
+							margin-left: 0rem;
+							padding-top: 0.4rem;
+							padding: 0;
+							margin-top: 1rem;
+		}
+		.features-text-two-small {
+			text-align: center;
+				font-size: 2.2rem;
+				color: @white;
+				margin-left: 0rem;
+				padding-top: 1rem;
+		}
+		.smnext {
+			margin-top: 1rem;
+		}
+		.smh4 {
+			h4 {
+				margin-top: 1rem; 
+			}
+		}
+		.otstyp {
+			padding-top: 1rem;
+		} 
+		.otstypbot {
+			padding-bottom: 2rem;
+		}
+	}
+
+	
+}
