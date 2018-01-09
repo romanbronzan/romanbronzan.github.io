@@ -18,13 +18,14 @@ a {
   color: #f19d29;
 }
 .title {
+  display: inline-block;
   font-size: 6.2rem;
   color: #04080b;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-align: center;
   background-color: #f19d29;
-  width: 98.8vw;
+  width: 100%;
   margin-top: 0;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -37,7 +38,7 @@ a {
   background-color: #f19d29;
   margin-top: 0.6rem;
 }
-h3 {
+.orangetext {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -49,7 +50,7 @@ h3 {
 .main {
   background: #121416 url(../img/bg/mainbg.jpg) center no-repeat;
   background-size: cover;
-  width: 102.9vw;
+  width: 100%;
 }
 .main .navbar {
   background: none;
@@ -130,7 +131,7 @@ h3 {
 }
 .main .callme .btn {
   margin-top: 4rem;
-  width: 10%;
+  width: 100%;
   text-align: center;
   height: 6rem;
   background-color: #f19d29;
@@ -147,20 +148,7 @@ h3 {
   transition: 0.2s linear;
 }
 .desc {
-  display: inline-block;
-}
-.desc .title {
-  font-size: 6.2rem;
-  color: #04080b;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  text-align: center;
-  background-color: #f19d29;
-  width: 100vw;
-  margin-top: 0;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  text-transform: uppercase;
+  position: relative;
 }
 .desc .forvideo {
   padding-top: 4rem;
@@ -230,7 +218,7 @@ h3 {
     width: 100%;
     text-align: center;
   }
-  h3 {
+  .orangetext {
     font-size: 2.7rem;
   }
   .desc .forvideo {
@@ -301,7 +289,7 @@ h3 {
     right: 50%;
     transform: translateX(-10%) translateY(-10%);
   }
-  h3 {
+  .orangetext {
     font-size: 2.2rem;
   }
   .desc .forvideo {
@@ -402,8 +390,8 @@ h3 {
   .desc {
     display: inline-block;
   }
-  .desc h3 {
-    font-size: 2rem;
+  .desc .orangetext {
+    font-size: 1.8rem;
   }
   .desc .title {
     font-size: 2.8rem;
