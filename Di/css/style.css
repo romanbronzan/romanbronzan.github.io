@@ -3,7 +3,7 @@ html {
   font-size: 10px;
 }
 body {
-  background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStock.jpg?raw=true) center no-repeat;
+  background: #121416 url(../img/bg/istock.jpg) center no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
@@ -275,7 +275,7 @@ a {
 }
 @media (max-width: 991px) {
   body {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) center no-repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -352,7 +352,7 @@ a {
 }
 @media (max-width: 767px) {
   body {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) center no-repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -391,7 +391,7 @@ a {
     display: inline-block;
   }
   .desc .orangetext {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .desc .title {
     font-size: 2.8rem;
