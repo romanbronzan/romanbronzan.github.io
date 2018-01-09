@@ -290,7 +290,7 @@ h3 {
 }
 @media (max-width: 991px) {
   body {
-    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
+    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -367,7 +367,7 @@ h3 {
 }
 @media (max-width: 767px) {
   body {
-    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
+    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
