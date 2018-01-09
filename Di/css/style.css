@@ -3,8 +3,8 @@ html {
   font-size: 10px;
 }
 body {
-  background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStock.jpg?raw=true) center no-repeat;
-  background-size: 100vw;
+  background: #121416 url(../img/bg/istock.jpg) center no-repeat;
+  background-size: 100%;
   background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -29,9 +29,6 @@ a {
   padding-bottom: 1rem;
   padding-top: 1rem;
   text-transform: uppercase;
-}
-h2 {
-  margin: 0;
 }
 .rect {
   position: absolute;
@@ -133,7 +130,7 @@ h3 {
 }
 .main .callme .btn {
   margin-top: 4rem;
-  width: 100%;
+  width: 10%;
   text-align: center;
   height: 6rem;
   background-color: #f19d29;
@@ -290,7 +287,7 @@ h3 {
 }
 @media (max-width: 991px) {
   body {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) center no-repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -367,7 +364,7 @@ h3 {
 }
 @media (max-width: 767px) {
   body {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) center no-repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -404,6 +401,9 @@ h3 {
   }
   .desc {
     display: inline-block;
+  }
+  .desc h3 {
+    font-size: 2rem;
   }
   .desc .title {
     font-size: 2.8rem;
