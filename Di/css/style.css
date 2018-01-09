@@ -3,8 +3,8 @@ html {
   font-size: 10px;
 }
 body {
-  background: #121416 url(../img/bg/istock.jpg) no-repeat;
-  background-size: 100%;
+  background: #121416 url(../img/bg/istock.jpg) center no-repeat;
+  background-size: 100vw;
   background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -52,6 +52,7 @@ h3 {
 .main {
   background: #121416 url(../img/bg/mainbg.jpg) center no-repeat;
   background-size: cover;
+  width: 100vw;
 }
 .main .navbar {
   background: none;
@@ -80,6 +81,13 @@ h3 {
 }
 .main .navbar .navbar-header a {
   outline: none;
+}
+.main .navbar .navbar-toggle {
+  background-color: #f19d29;
+  border: #04080b;
+}
+.main .navbar .icon-bar {
+  color: #04080b;
 }
 .main .logo {
   margin-top: 2rem;
@@ -113,7 +121,7 @@ h3 {
   font-size: 7.2rem;
   text-align: center;
   color: #ffffff;
-  padding-top: 11rem;
+  padding-top: 7rem;
   text-decoration: none;
   outline: none;
   padding-bottom: 4rem;
@@ -130,12 +138,12 @@ h3 {
   height: 6rem;
   background-color: #f19d29;
   text-transform: uppercase;
+  outline: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 2.9rem;
   border-radius: 1px;
   color: #04080b;
-  outline: none;
 }
 .main .callme .btn:hover {
   background-color: #d9840e;
@@ -143,6 +151,19 @@ h3 {
 }
 .desc {
   display: inline-block;
+}
+.desc .title {
+  font-size: 6.2rem;
+  color: #04080b;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background-color: #f19d29;
+  width: 100vw;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
 }
 .desc .forvideo {
   padding-top: 4rem;
@@ -269,7 +290,7 @@ h3 {
 }
 @media (max-width: 991px) {
   body {
-    background: #121416 url(../img/bg/iStockmob.jpg) no-repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -346,7 +367,7 @@ h3 {
 }
 @media (max-width: 767px) {
   body {
-    background: #121416 url(../img/bg/iStockmob.jpg) no-repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -381,11 +402,11 @@ h3 {
   .main .callme .btn {
     font-size: 2rem;
   }
-  .title {
-    font-size: 2.8rem;
-  }
   .desc {
     display: inline-block;
+  }
+  .desc .title {
+    font-size: 2.8rem;
   }
   .desc .forvideo {
     display: none;
