@@ -4,7 +4,7 @@ html {
 }
 body {
   background: #121416 url(../img/bg/istock.jpg) center no-repeat;
-  background-size: 100vw;
+  background-size: 100%;
   background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -18,20 +18,18 @@ a {
   color: #f19d29;
 }
 .title {
+  display: inline-block;
   font-size: 6.2rem;
   color: #04080b;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-align: center;
   background-color: #f19d29;
-  width: 98.8vw;
+  width: 100%;
   margin-top: 0;
   padding-bottom: 1rem;
   padding-top: 1rem;
   text-transform: uppercase;
-}
-h2 {
-  margin: 0;
 }
 .rect {
   position: absolute;
@@ -40,7 +38,7 @@ h2 {
   background-color: #f19d29;
   margin-top: 0.6rem;
 }
-h3 {
+.orangetext {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -52,7 +50,7 @@ h3 {
 .main {
   background: #121416 url(../img/bg/mainbg.jpg) center no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
 }
 .main .navbar {
   background: none;
@@ -143,27 +141,14 @@ h3 {
   font-weight: 700;
   font-size: 2.9rem;
   border-radius: 1px;
-  color: #04080b;
+  color: #ffffff;
 }
 .main .callme .btn:hover {
-  background-color: #d9840e;
+  background-color: #cf7e0e;
   transition: 0.2s linear;
 }
 .desc {
-  display: inline-block;
-}
-.desc .title {
-  font-size: 6.2rem;
-  color: #04080b;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  text-align: center;
-  background-color: #f19d29;
-  width: 100vw;
-  margin-top: 0;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  text-transform: uppercase;
+  position: relative;
 }
 .desc .forvideo {
   padding-top: 4rem;
@@ -180,6 +165,9 @@ h3 {
 }
 .desc .subtitle {
   margin-top: 5rem;
+}
+.desc .subtitlemob {
+  display: none;
 }
 .features1 {
   padding-top: 4rem;
@@ -228,12 +216,202 @@ h3 {
   margin-left: -2.5rem;
   margin-top: -0.8rem;
 }
+.price {
+  padding-top: 8rem;
+}
+.price .atent {
+  padding-top: 1rem;
+  font-size: 3.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+  color: rgba(216, 0, 0, 0.7);
+  text-shadow: 0px 0px 24.84px rgba(210, 34, 41, 0.8);
+}
+.price .ramka {
+  margin-top: 6.6rem;
+  width: 100%;
+  height: 25rem;
+  border: 3px solid #f19d29;
+}
+.price .ramka .service {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+.price .ramka .service-list {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.price .ramka .service-icon {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.price .ramka .priceblock {
+  margin-top: 5%;
+  width: 100%;
+  height: 7rem;
+  background-color: #04080b;
+  text-align: center;
+  color: #f19d29;
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  padding-top: 1rem;
+  letter-spacing: 0.12rem;
+}
+.price .ramka-max {
+  margin-top: 1rem;
+  width: 100%;
+  height: 25rem;
+  border: 3px solid #f19d29;
+}
+.price .ramka-max:hover {
+  border-color: #f19d29;
+  border-style: solid;
+  box-shadow: 0px 10px 40.94px 5.06px rgba(210, 34, 41, 0.75);
+  transition: 0.2s linear;
+}
+.price .ramka-max .service {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+.price .ramka-max .service-list {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.price .ramka-max .service-icon {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.price .ramka-max .priceblock {
+  margin-top: 5%;
+  width: 100%;
+  height: 7rem;
+  background-color: #04080b;
+  text-align: center;
+  color: #f19d29;
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  padding-top: 1rem;
+  letter-spacing: 0.12rem;
+}
+.price .ramka-max .priceblock-max {
+  margin-top: -1.1rem;
+  padding-top: 1.5rem;
+  font-size: 2.6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-decoration: line-through #d80000;
+}
+.price .ramka-max .sticker {
+  position: absolute;
+}
+.price .ramka-max .discount .fev {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #d80000;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.price .ramka-max .discount-price {
+  text-align: center;
+  color: #f19d29;
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-top: -3%;
+  letter-spacing: 0.12rem;
+}
+.about-size {
+  margin-top: -4rem;
+}
+.about .subtitlemob {
+  display: none;
+}
+.about .title {
+  margin-top: 8.5rem;
+}
+.about-block {
+  padding-top: 4rem;
+}
+.about img {
+  display: block;
+}
+.about-image {
+  display: block;
+}
+.about-text {
+  text-align: left;
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-left: -2.2rem;
+  margin-top: 0rem;
+}
+.about-onetext {
+  text-align: left;
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-left: -2.2rem;
+  padding-top: 0.4rem;
+}
+.works {
+  padding-top: 8rem;
+}
+.works a {
+  outline: none;
+}
+.works-photo {
+  padding-top: 2rem;
+}
+.works img {
+  padding-top: 2rem;
+  overflow: hidden;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.works img:hover {
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -o-transform: scale(1.07);
+}
+.works .subtitle {
+  padding-top: 4rem;
+}
+.works .rect {
+  margin-top: 2.5rem;
+}
 @media (max-width: 1199px) {
+  body {
+    background: #121416 url(../img/bg/iStock.jpg) center repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
   .main .callme .btn {
     width: 100%;
     text-align: center;
   }
-  h3 {
+  .orangetext {
     font-size: 2.7rem;
   }
   .desc .forvideo {
@@ -287,10 +465,79 @@ h3 {
     margin-left: -1rem;
     margin-top: -0.8rem;
   }
+  .desc .subtitlemob {
+    display: none;
+  }
+  .price .atent {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .price .ramka .priceblock {
+    margin-top: 1.9%;
+  }
+  .price .ramka-max .priceblock {
+    margin-top: -0.2rem;
+  }
+  .price .ramka-max .discount .fev {
+    padding-bottom: 1rem;
+  }
+  .price .ramka-max:hover {
+    box-shadow: none;
+  }
+  .about .about-block {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  .about-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-row-2 {
+    padding-top: 4rem;
+  }
+  .about .srok {
+    padding-top: 14rem;
+  }
+  .about .about-text {
+    padding-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about .about-onetext {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about .about-block {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  .about-image .about-png {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-row-2 {
+    padding-top: 4rem;
+  }
+  .about .srok {
+    padding-top: 16rem;
+  }
+  .about .about-text {
+    text-align: center;
+  }
+  .about .about-onetext {
+    text-align: center;
+  }
+  .about-center {
+    text-align: center;
+  }
 }
 @media (max-width: 991px) {
   body {
-    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -304,7 +551,7 @@ h3 {
     right: 50%;
     transform: translateX(-10%) translateY(-10%);
   }
-  h3 {
+  .orangetext {
     font-size: 2.2rem;
   }
   .desc .forvideo {
@@ -364,6 +611,41 @@ h3 {
   .desc .smh4 h4 {
     margin-top: -1rem;
   }
+  .desc .subtitlemob {
+    display: none;
+  }
+  .price .ramka .priceblock {
+    margin-top: 2.5%;
+  }
+  .price .ramka-max .priceblock {
+    margin-top: -0.85rem;
+  }
+  .about .about-block {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  .about-image .about-png {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-row-2 {
+    padding-top: 4rem;
+  }
+  .about .srok {
+    padding-top: 16rem;
+  }
+  .about .about-text {
+    text-align: center;
+  }
+  .about .about-onetext {
+    text-align: center;
+  }
+  .about-center {
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   body {
@@ -373,6 +655,9 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
   }
+  .moborange {
+    color: orange;
+  }
   .navbar .navbar-brand {
     right: 50%;
     transform: translateX(20%) translateY(10%);
@@ -380,6 +665,10 @@ h3 {
   .navbar .menu {
     right: 50%;
     transform: translateX(20%) translateY(0%);
+  }
+  .main {
+    background: #121416 url(../img/bg/mainbg.jpg) 93% 50% no-repeat;
+    background-size: cover;
   }
   .main .navbar {
     background: #04080b;
@@ -402,8 +691,17 @@ h3 {
   .main .callme .btn {
     font-size: 2rem;
   }
+  .title {
+    font-size: 2.8rem;
+  }
   .desc {
     display: inline-block;
+  }
+  .desc .subtitlemob {
+    display: inline;
+  }
+  .desc .orangetext {
+    font-size: 2rem;
   }
   .desc .title {
     font-size: 2.8rem;
@@ -489,5 +787,65 @@ h3 {
   }
   .desc .otstypbot {
     padding-bottom: 2rem;
+  }
+  .subtitlenomob {
+    display: none;
+  }
+  .price .atent {
+    font-size: 2.4rem;
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .price .ramka {
+    height: 28rem;
+  }
+  .price .ramka .priceblock {
+    margin-top: 2.5rem;
+  }
+  .price .ramka .service {
+    font-size: 1.65rem;
+  }
+  .price .ramka .service-list {
+    font-size: 1.2rem;
+  }
+  .price .ramka .service-icon {
+    padding-top: 5rem;
+  }
+  .price .ramka-max .priceblock {
+    margin-top: 1.65rem;
+  }
+  .price .ramka-max .discount .fev {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    padding-top: 2.8rem;
+  }
+  .price .stiker {
+    display: none;
+  }
+  .about .about-block {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  .about-image .about-png {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-row-2 {
+    padding-top: 4rem;
+  }
+  .about .srok {
+    padding-top: 16rem;
+  }
+  .about .about-text {
+    text-align: center;
+  }
+  .about .about-onetext {
+    text-align: center;
+  }
+  .about-center {
+    text-align: center;
   }
 }
