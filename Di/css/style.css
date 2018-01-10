@@ -48,7 +48,7 @@ a {
   margin-left: 2.5rem;
 }
 .main {
-  background: #121416 url(../img/bg/mainbg.jpg) center no-repeat;
+  background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/mainbg.jpg?raw=true) center no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -664,7 +664,7 @@ a {
     transform: translateX(20%) translateY(0%);
   }
   .main {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) 93% 50% no-repeat;
+    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/mainbg.jpg?raw=true) 93% 50% no-repeat;
     background-size: cover;
   }
   .main .navbar {
