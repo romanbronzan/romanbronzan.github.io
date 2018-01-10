@@ -398,7 +398,7 @@ a {
 }
 @media (max-width: 1199px) {
   body {
-    background: #121416 url(../img/bg/iStock.jpg) center repeat;
+    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStock.jpg?raw=true) center repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
