@@ -16,7 +16,7 @@
     <link href="css/style.css" rel="stylesheet">
     
     <!-- Animate -->
-    <!-- <link href="css/animate.css" rel="stylesheet"> -->
+    <link href="css/animate.css" rel="stylesheet">
     
     <link rel="stylesheet" href="css/fontawesome.min.css">    
     <script src="https://use.fontawesome.com/a5b47e8af5.js"></script>
@@ -27,7 +27,7 @@
   <body>
         
 
-    <main class="main">
+    <main class="main" id="main">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-default navbar-fixed-top">
@@ -48,10 +48,10 @@
                      
                       
                       <ul class="nav navbar-nav navbar-right menu">
-                        <li><a href="#buy" class="buynow">Цены</a></li>
-                        <li><a href="#how" class="how">О нас</a></li>
-                        <li><a href="#why" class="whychooseus">Наши работы</a> </li>
-                        <li><a href="#rev" class="rev">Контакты</a></li>
+                        <li><a href="#prices" class="buynow">Цены</a></li>
+                        <li><a href="#about" class="how">О нас</a></li>
+                        <li><a href="#works" class="whychooseus">Наши работы</a> </li>
+                        <li><a href="#contacts" class="rev">Контакты</a></li>
                         
                       </ul>
                 </nav>
@@ -61,11 +61,11 @@
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
                     <div class="mainlogo">
-                        <img src="https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/logo/Logo.png?raw=true" alt="">
+                        <img src="img/logo/logo.png" alt="">
                     </div>
 
                     <div class="mainlogomob">
-                        <img src="https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/logo/Logomob.png?raw=true" alt="">
+                        <img src="img/logo/logomob.png" alt="">
                     </div>
 
                 </div>
@@ -82,11 +82,13 @@
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
                     <div class="callme">
-                        <button class="btn">перезвоните мне!</button>
+                        <form action="#call">
+                            <button class="btn">перезвоните мне!</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="down"><a href="#" class=""><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></div>
+            <div class="down"><a href="#desc" class=""><i class="fa fa-angle-double-down wow bounce" aria-hidden="true"></i></a></div>
             </div>
     </main>
 
@@ -94,7 +96,7 @@
     
 
     <section class="desc">
-         <span class="title">о Полиуретановой пленке</span>
+         <span class="title" id="desc">о Полиуретановой пленке</span>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -629,7 +631,7 @@
     
     
     <section class="price">
-        <span class="title">Наши цены</span>
+        <span class="title" id="prices">Наши цены</span>
         <div class="container">
             <div class="raw">
                 
@@ -690,7 +692,7 @@
 
 
     <section class="about">
-        <span class="title">Немного о компании АвтоСтиль</span>
+        <span class="title" id="about">Немного о компании АвтоСтиль</span>
         <div class="container">
             <div class="row">
                 <div class="about-block">
@@ -884,52 +886,52 @@
 
 
     <section class="works about-size">
-        <span class="title">наши работы</span>
+        <span class="title" id="works">наши работы</span>
         <div class="container">
             <div class="raw">
                 <div class="works-photo">
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/1.jpg"><img src="img/photo/small/1.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/2.jpg"><img src="img/photo/small/2.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/3.jpg"><img src="img/photo/small/3.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/4.jpg"><img src="img/photo/small/4.png"></a>
                     </div>
                 </div>
             </div>
             <div class="raw">
                 <div class="works-photo">
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/5.jpg"><img src="img/photo/small/5.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/6.jpg"><img src="img/photo/small/6.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/7.jpg"><img src="img/photo/small/7.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/8.jpg"><img src="img/photo/small/8.png"></a>
                     </div>
                 </div>
             </div>
             <div class="raw">
                 <div class="works-photo">
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/9.jpg"><img src="img/photo/small/9.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/10.jpg"><img src="img/photo/small/10.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/11.jpg"><img src="img/photo/small/11.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-offset-0 col-md-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/big/12.jpg"><img src="img/photo/small/12.png"></a>
                     </div>
                 </div>
@@ -948,16 +950,16 @@
             </div>
             <div class="raw">
                 <div class="works-photo">
-                    <div class="col-lg-3 col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-3 col-lg-offset-0 col-md- col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/unlucky/1.jpg"><img src="img/photo/unluckysmall/1.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-3 col-lg-offset-0 col-md- col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/unlucky/2.jpg"><img src="img/photo/unluckysmall/2.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-3 col-lg-offset-0 col-md- col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/unlucky/3.jpg"><img src="img/photo/unluckysmall/3.png"></a>
                     </div>
-                    <div class="col-lg-3 col-lg-3 col-lg-offset-0 col-md-offset-4 col-sm-offset-4 col-xs-offset-1">
+                    <div class="col-lg-3 col-lg-3 col-lg-offset-0 col-md- col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
                         <a data-fancybox="gallery" href="img/photo/unlucky/4.jpg"><img src="img/photo/unluckysmall/4.png"></a>
                     </div>
                 </div>
@@ -968,6 +970,138 @@
 
         </div>
     </section>
+
+
+    <section class="call">
+         <span class="title" id="call">заказать обратный звонок</span>
+         <div class="container">
+             <div class="raw">
+                 <div class="col-lg-10 col-lg-offset-1">
+                     <div class="call-title">
+                         <p>Оставьте свой номер и мы перезвоним вам в ближайшее время!</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="raw">
+                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+                     <div class="call-form">
+                         <form action="#">
+                             <div class="call-input">
+                                 <input type="text" required class="call-form-name call-input-field" placeholder="Ваше имя">
+                                 <input type="text" required id="phone" class="call-form-phone call-input-field" placeholder="Ваш телефон"> 
+                                 <button class="btn call-form-btn">Перeзвоните мне</button>
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </section>
+
+
+    <section class="contact">
+        <span class="title" id="contacts">Контакты</span>
+        <div class="container">
+            <div class="raw">
+                <div class="col-lg-6">
+                   <div class="contact-map">
+                       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A28630557c8906bc7ab241d02927e53ea5de28c589399a37ab3d3914d55015847&amp;width=100%25&amp;height=470&amp;lang=ru_RU&amp;scroll=true"></script>
+                   </div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+                   <div class="contact-desc">
+                       <div class="contact-phone">
+                           <div class="phone-icon">
+                               <img src="img/Icons/phone.png" alt="">
+                                <span class="phone-text">8 (812) 987-321</span>
+                           </div>
+                          
+                       </div>
+                       <div class="contact-adress">
+                           <div class="adress-icon">
+                               <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="adress-text">г. Санкт-Петербург, Синопская набережная, 10</span>
+                           </div>
+                          
+                       </div>
+                       <div class="contact-adress">
+                           <div class="adress-icon">
+                               <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="adress-text">г. Санкт-Петербург, Пискарёвский проспект, 63</span>
+                           </div>
+                          
+                       </div>
+                       <div class="contact-adress">
+                           <div class="adress-icon">
+                              <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span class="adress-text">M-group78@yandex.ru</span>
+                           </div>
+                          
+                       </div>
+                       <div class="contact-adress">
+                           <div class="adress-icon">
+                               <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <a href="https://www.instagram.com/detailing_autostyle/" class="adress-text" target="_blank">detailing_autostyle</a>
+                           </div>
+                          
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="partners">
+        <span class="title">наши партнеры</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="partners-logo">
+                        <img src="img/logo/3m.png" alt="">
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <p class="partners-logo logo-hexis">
+                        <img src="img/logo/logo-hexis.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-logo">
+                        <a href="#main"><img src="img/logo/Logotype.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-lg-offset-6 col-md-12 col-md-offset-0">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-phone">
+                            <img src="img/Icons/phone-small.png" alt="">
+                            <span class="phone-text">8 (812) 987-321</span>
+                        </div>
+                        <div class="footer-contacts-email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span class="phone-text">M-group78@yandex.ru</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="raw">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-data">20?? - 2018 Детейлинг-студия АвтоСтиль
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
         
 
 
@@ -985,20 +1119,31 @@
     <!-- Slide -->
     <!-- <script type="text/javascript" src="js/slide.js"></script> -->
 
+   <!--  MaskInput 0-> -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+        jQuery(function($){
+           $("#phone").mask("+7 (999) 999-99-99");
+        });
+    </script>
+
+    <script type="text/javascript" src="js/slide.js"></script>
+    
 
     <!-- Parallax -->
     <!-- <script src="js/parallax.min.js"></script> -->
     
     <!-- Animate WOW -->
-    <!-- <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
        new WOW().init();
-    </script> -->
+    </script>
+    
 
     <!-- Fotorama -->
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
+    <!-- <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">  -->
     <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> -->
-    
+
     <!-- Video-bg -->
     <!-- <sctipt src="js.jquery.vide.min.js"></sctipt> -->
 
@@ -1007,4 +1152,4 @@
 
 
   </body>
-</html>
+</html0

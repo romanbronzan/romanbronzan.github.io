@@ -3,7 +3,7 @@ html {
   font-size: 10px;
 }
 body {
-  background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStock.jpg?raw=true) center no-repeat;
+  background: #121416 url(../img/bg/istock.jpg) center no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
@@ -48,7 +48,7 @@ a {
   margin-left: 2.5rem;
 }
 .main {
-  background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/mainbg.jpg?raw=true) center no-repeat;
+  background: #121416 url(../img/bg/mainbg.jpg) center no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -56,6 +56,12 @@ a {
   background: none;
   border: none;
   position: absolute;
+}
+.main .navbar .navbar-header {
+  cursor: default;
+}
+.main .navbar .navbar-header a:hover {
+  cursor: default;
 }
 .main .navbar .navbar-nav li a {
   font-size: 18px;
@@ -340,6 +346,9 @@ a {
   margin-top: -3%;
   letter-spacing: 0.12rem;
 }
+.about-size {
+  margin-top: -4rem;
+}
 .about .subtitlemob {
   display: none;
 }
@@ -377,6 +386,7 @@ a {
 }
 .works-photo {
   padding-top: 2rem;
+  text-align: center;
 }
 .works img {
   padding-top: 2rem;
@@ -396,9 +406,155 @@ a {
 .works .rect {
   margin-top: 2.5rem;
 }
+.call {
+  margin-top: 8rem;
+}
+.call .title {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.call-title {
+  padding-top: 2rem;
+  font-size: 2.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+.call-form-name {
+  width: 100%;
+  margin-top: 2rem;
+  height: 6rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+.call-form-phone {
+  width: 100%;
+  margin-top: 2rem;
+  height: 6rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+.call-form-btn {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  height: 6rem;
+  background-color: #f19d29;
+  text-transform: uppercase;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.9rem;
+  border-radius: 1px;
+  color: #ffffff;
+}
+.call-form-btn:hover {
+  background-color: #cf7e0e;
+  transition: 0.2s linear;
+}
+.contact .title {
+  margin-top: 6rem;
+}
+.contact-map {
+  margin-top: 6rem;
+}
+.contact-desc .contact-phone {
+  margin-top: 6.5rem;
+}
+.contact-desc .contact-phone .phone-icon {
+  display: inline;
+  font-size: 3rem;
+  color: #f19d29;
+}
+.contact-desc .contact-phone .phone-text {
+  font-size: 2.4rem;
+  color: #ffffff;
+  padding-left: 1rem;
+  margin-bottom: -1rem;
+}
+.contact-desc .contact-adress {
+  margin-top: 4rem;
+}
+.contact-desc .contact-adress .adress-icon {
+  display: inline;
+  font-size: 3rem;
+  color: #f19d29;
+}
+.contact-desc .contact-adress .adress-icon a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+.contact-desc .contact-adress .adress-icon a:hover {
+  color: #f19d29;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+.contact-desc .contact-adress .adress-icon a a:active {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+.contact-desc .contact-adress .adress-text {
+  font-size: 2.4rem;
+  color: #ffffff;
+  padding-left: 1rem;
+  margin-bottom: -1rem;
+}
+.partners {
+  padding-top: 8rem;
+}
+.partners img {
+  padding-top: 4rem;
+}
+.partners-logo {
+  text-align: center;
+}
+.partners .logo-hexis {
+  padding-top: 1rem;
+}
+.footer {
+  margin-top: 4rem;
+  background-color: #04080b;
+  padding-bottom: 4rem;
+}
+.footer-logo {
+  margin-top: 2rem;
+}
+.footer-logo a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.footer-contacts {
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.footer-contacts-phone {
+  text-align: right;
+}
+.footer-contacts .phone-text {
+  padding-left: 0.5rem;
+}
+.footer-contacts-email {
+  padding-top: 1rem;
+  text-align: right;
+}
+.footer-contacts-email .fa {
+  color: #f19d29;
+}
+.footer-data {
+  color: #ffffff;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-left: -1rem;
+}
 @media (max-width: 1199px) {
   body {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStock.jpg?raw=true) center repeat;
+    background: #121416 url(../img/bg/iStock.jpg) center repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -531,10 +687,30 @@ a {
   .about-center {
     text-align: center;
   }
+  .footer-logo {
+    text-align: center;
+    margin-left: 3rem;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+  .footer-contacts-phone {
+    text-align: center;
+  }
+  .footer-contacts .phone-text {
+    padding-left: -0.5rem;
+  }
+  .footer-contacts-email {
+    text-align: center;
+  }
+  .footer-data {
+    text-align: center;
+    padding-top: 2rem;
+  }
 }
 @media (max-width: 991px) {
   body {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) center repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -646,7 +822,7 @@ a {
 }
 @media (max-width: 767px) {
   body {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/iStockmob.jpg?raw=true) center no-repeat;
+    background: #121416 url(../img/bg/iStockmob.jpg) center no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
@@ -664,7 +840,7 @@ a {
     transform: translateX(20%) translateY(0%);
   }
   .main {
-    background: #121416 url(https://github.com/romanbronzan/romanbronzan.github.io/blob/master/Di/img/bg/mainbg.jpg?raw=true) 93% 50% no-repeat;
+    background: #121416 url(../img/bg/mainbg.jpg) 93% 50% no-repeat;
     background-size: cover;
   }
   .main .navbar {
@@ -844,5 +1020,8 @@ a {
   }
   .about-center {
     text-align: center;
+  }
+  .call .btn {
+    font-size: 2rem;
   }
 }
